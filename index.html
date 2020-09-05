@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+        <title>Plant growth simulator</title>
+</head>
+
+<body>
+  Static growth of the plant: 
+  <input id = "growth" type="number" min="0" value="0" max ="100"></input><br>
+  Random growth of the plant: 
+  <input id = "growthr" type="number" min="0" value="0"></input><br>
+  Sample size:
+  <input id = "sample" type="number" min="10" value = "10"></input><br>  
+  What age do you want to check for(0-100):
+  <input id = "age" type="number" min="0" value = "50" max="100"></input><br>  
+  How many ticks:
+  <input id = "ticks" type="number" min="1" value = "5"></input><br>  
+  How many decimal places:
+  <input id = "exact" type="number" min="0" value = "3"></input><br>  
+  <input type="checkbox" name="whattocheck" id = "over">
+  <label for="whattocheck">Check if over the given age(unchecked = check if under)</label><br>
+  <button onclick="getstuffandcalc()">Calculate</button><br>
+  Result:<div id="result"></div>
+  <script src="js.js"></script>
+</body>
+</html>
